@@ -44,6 +44,8 @@ for x in range(1, int(chambers) + 1):
         pyautogui.moveTo(100, 150)
         keyboard.write('O')
         keyboard.press_and_release('enter')
+        keyboard.press_and_release('enter')
+        keyboard.press_and_release('enter')
         while True:
             pyautogui.moveTo(100, 150)
             x += 1
