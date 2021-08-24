@@ -6,7 +6,7 @@ If you lose your system32 will be deleted
 
 # Install 
 
-## Use the package manager [pip](https://pip.pypa.io/en/stable/) to install ANTI-StreamHack or [py](https://www.python.org/downloads/).
+## Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Roulette Russe or [py](https://www.python.org/downloads/).
 
 > Open require.bat
 ## OR
